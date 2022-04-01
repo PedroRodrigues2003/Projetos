@@ -1,5 +1,4 @@
 -Ter o wamp server instalado na máquina
--Nos arquivos que conectam com o banco de dados,trocar os valores de  $dbusername e $dbpassword  para seu proprio login e senha
 -No localhost/phpmyadmin :
 criar a database “oficina”
 criar a table “orcamentos”  com o seguinte comando:
@@ -12,3 +11,9 @@ CREATE TABLE orcamentos (
     horario datetime NOT NULL,
     PRIMARY KEY (id)
 );	
+-Inicializar o wamp
+fazer download e salvar os arquivos da pasta Teste_Estagio_Codificar em alguma pasta dentro de : wamp64\www\php
+-Supondo que a pasta seja wamp64\www\php\teste
+-No navegador de sua preferencia,digite:
+localhost/php/teste/cadastro-orçamento.php
+-Nos arquivos que conectam com o banco de dados,trocar os valores de  $dbusername e $dbpassword  para seu proprio login e senha
