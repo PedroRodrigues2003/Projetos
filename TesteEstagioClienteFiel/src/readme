@@ -1,0 +1,6 @@
+-Como não foi usado nenhuma biblioteca externa,apenas será necessário:
+-node para os comando npm
+Passos:
+Criar o app react com o comando: npx create-react-app nome(usar qualquer um que quiser)
+Trocar minha pagina src pela do app criado
+usar o comando:npm start na pasta do app criado
