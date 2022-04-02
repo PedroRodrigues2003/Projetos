@@ -121,41 +121,40 @@ function enviar(){
         {/* cada botao sera um arrow function que dirá updateCalc */}
         <div className="operators">
 
-<button onClick = {() => updateCalc('/')}>/</button>
-<button onClick = {() => updateCalc('*')}>*</button>
-<button onClick = {() => updateCalc('+')}>+</button>
-<button onClick = {() => updateCalc('-')}>-</button>
+        <button onClick = {() => updateCalc('/')}>/</button>
+        <button onClick = {() => updateCalc('*')}>*</button>
+        <button onClick = {() => updateCalc('+')}>+</button>
+        <button onClick = {() => updateCalc('-')}>-</button>
 
-<button onClick={deleteLast}>DEL</button>
+        <button onClick={deleteLast}>DEL</button>
 
-</div>
+        </div>
 
-{/* DIGITOS */}
-<div className="digits">
-<button onClick = {() => updateCalc('1')}>1</button>
-<button onClick = {() => updateCalc('2')}>2</button>
-<button onClick = {() => updateCalc('3')}>3</button>
-<button onClick = {() => updateCalc('4')}>4</button>
-<button onClick = {() => updateCalc('5')}>5</button>
-<button onClick = {() => updateCalc('6')}>6</button>
-<button onClick = {() => updateCalc('7')}>7</button>
-<button onClick = {() => updateCalc('0')}>0</button>
+        {/* DIGITOS */}
+        <div className="digits">
+        <button onClick = {() => updateCalc('1')}>1</button>
+        <button onClick = {() => updateCalc('2')}>2</button>
+        <button onClick = {() => updateCalc('3')}>3</button>
+        <button onClick = {() => updateCalc('4')}>4</button>
+        <button onClick = {() => updateCalc('5')}>5</button>
+        <button onClick = {() => updateCalc('6')}>6</button>
+        <button onClick = {() => updateCalc('7')}>7</button>
+        <button onClick = {() => updateCalc('0')}>0</button>
 
+        </div>
 
-<button onClick = {() => updateCalc('0')}>0</button>
-
-
-{/* chamando a func calcular */}
-
-<button onClick = {() => calculate('10')}>=Decimal</button>
-<button onClick = {() => calculate('8')}>=Octal</button>
-<button onClick = {() => calculate('2')}>=Binario</button>
-<button onClick = {() => enviar()}>Enviar resultado ao whatssap</button>
-
-</div>
-
-</div>
-</div>
+        <div className='sistemas'>
+          <button onClick = {() => calculate('10')}>=Decimal</button>
+          <button onClick = {() => calculate('8')}>=Octal</button>
+          <button onClick = {() => calculate('2')}>=Binario</button>
+        </div>
+        
+        <div className='enviar'>
+        <button onClick = {() => enviar()}>Enviar p WhatsApp</button>
+        </div>
+        
+        </div>
+        </div>
   );
 }
 
