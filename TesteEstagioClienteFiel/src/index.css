@@ -64,7 +64,7 @@
   }
   .operators button{
     flex: 1 1 0%;
-    background-color: var(--primary);
+    background-color: #0b8dc0;
     font-weight: 700;
   }
   .digits{
@@ -77,13 +77,22 @@
     max-width: 100%;
     background-color: var(--dark);
   }
-  .acoes{
+  .enviar{
     display:flex;
     flex-wrap : wrap;
     
   }
-  .acoes button{
+  .enviar button{
     flex: 1 1 33.33%;
     max-width: 100%;
-    background-color: var(--dark);
+    background-color: #033346;
+  }
+  {/* flexiona os botoes,ajustando posicao*/}
+  .sistemas{
+    display: flex;
+  }
+  .sistemas button{
+    flex: 1 1 0%;
+    background-color: #0b8dc0;
+    font-weight: 700;
   }
