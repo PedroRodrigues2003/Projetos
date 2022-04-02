@@ -72,7 +72,10 @@ function App() {
     var valor= calc.split(operator);
     var valor1=valor[0];
     var valor2=valor[1];
-    var resultado=eval(valor1.toString(sistema)+operator+valor2.toString(sistema));
+    var valor1n=parseInt(valor1,sistema)
+    var valor2n=parseInt(valor2,sistema)
+    var resultado=eval(valor1n+operator+valor2n);
+
     setCalc(resultado.toString(sistema));
 }
 
@@ -86,7 +89,7 @@ function App() {
     const value = calc.slice(0,-1);
     setCalc(value);
 }
-//funcao para enviar o sms com o resulta da conta usando fetch
+//funcao para enviar o sms com o resultado da conta usando fetch
 function enviar(){
   var telefone = prompt("Digite seu numero");
   var url = "https://wapi.appclientefiel.com.br/rest/comum/EnviarWhats/"+ telefone +"/Calculadora/" +calc+""
