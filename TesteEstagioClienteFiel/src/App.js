@@ -114,8 +114,6 @@ function enviar(){
 
         </div>
 
-        
-  
         {/* operadores */}
         {/* cada botao sera um arrow function que dirá updateCalc */}
         <div className="operators">
