@@ -93,7 +93,6 @@ function App() {
 function enviar(){
   var telefone = prompt("Digite seu numero");
   var url = "https://wapi.appclientefiel.com.br/rest/comum/EnviarWhats/"+ telefone +"/Calculadora/" +calc+""
-  document.write(url);
   fetch(url).then((response)=>{
     if(response.status==200){
       alert("Mensagem enviada com sucesso")
