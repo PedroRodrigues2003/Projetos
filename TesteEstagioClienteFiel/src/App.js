@@ -58,6 +58,8 @@ function App() {
 
   //funcao para calcular
   const  calculate = sistema => {
+    
+    console.log(sistema)
    //descobre qual o operador está em calc
     if(calc.includes("+")){
       operator="+";
@@ -72,10 +74,15 @@ function App() {
     var valor= calc.split(operator);
     var valor1=valor[0];
     var valor2=valor[1];
-    var valor1n=parseInt(valor1,sistema)
-    var valor2n=parseInt(valor2,sistema)
-    var resultado=eval(valor1n+operator+valor2n);
+    var valor1n=parseInt(valor1,8)
+    var valor2n=parseInt(valor2,8)
 
+    var resultado=eval(valor1n+operator+valor2n);
+    console.log(resultado)
+    if(sistema!=8){
+      resultado = Math.trunc(resultado);
+      console.log(resultado)
+    }
     setCalc(resultado.toString(sistema));
 }
 
@@ -92,12 +99,12 @@ function App() {
 //funcao para enviar o sms com o resultado da conta usando fetch
 function enviar(){
   var telefone = prompt("Digite seu numero");
-  var url = "https://wapi.appclientefiel.com.br/rest/comum/EnviarWhats/"+ telefone +"/Calculadora/" +calc+""
+  var url = "https://wapi.appclientefiel.com.br/rest/comum/EnviarWhats/"+telefone +"/Calculadora/" +calc+""
   fetch(url).then((response)=>{
     if(response.status==200){
-      alert("Mensagem enviada com sucesso")
+      alert("Mensagem enviada com sucesso");
     }else{
-      alert("Falha ao enviar")
+      alert("Falha ao enviar");
     }
   })
   
