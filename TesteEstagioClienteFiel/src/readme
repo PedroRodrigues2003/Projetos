@@ -3,4 +3,4 @@
 Passos:
 Criar o app react com o comando: npx create-react-app nomeDoApp
 Trocar a minha pagina src pela do app criado
-usar o comando:npm start na pasta do app criado
+usar o comando :npm start na pasta do app criado
